@@ -1,0 +1,6 @@
+{
+  "installCommand": "npm --prefix portfolio-source-v2 install --include=dev",
+  "buildCommand": "npm --prefix portfolio-source-v2 run build",
+  "outputDirectory": "portfolio-source-v2/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx vite",
-    "build": "npx vite build",
-    "preview": "npx vite preview"
+    "dev": "npm --prefix portfolio-source-v2 run dev",
+    "build": "npm --prefix portfolio-source-v2 run build",
+    "preview": "npm --prefix portfolio-source-v2 run preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",

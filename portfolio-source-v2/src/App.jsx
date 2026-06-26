@@ -873,18 +873,34 @@ function Hero() {
             alignItems: "flex-start",
             gap: "clamp(0.75rem,2vw,1rem)",
             width: "fit-content",
-            padding: "0.7rem",
-            borderRadius: "1.1rem",
-            background: "rgba(255,31,61,0.06)",
-            boxShadow:
-              "0 0 0 1px rgba(255,31,61,0.15), 0 0 24px rgba(255,31,61,0.16)",
-            backdropFilter: "blur(10px)",
           }}
           className="hero-actions"
         >
-          <a href="/ismail-timi-cv.pdf" download className="btn-primary">
-            <FiDownload size={15} /> Download CV
-          </a>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "0.75rem",
+              alignItems: "center",
+            }}
+          >
+            <a href="/ismail-timi-cv.pdf" download className="btn-primary">
+              <FiDownload size={15} /> Download CV
+            </a>
+            <a
+              href="https://calendly.com/ismailtisetiwa/30min"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.4rem",
+              }}
+            >
+              <FiCalendar size={14} /> Book a free call
+            </a>
+          </div>
           <button
             className="btn-outline"
             onClick={() =>
@@ -895,25 +911,6 @@ function Hero() {
           >
             View Projects <FiArrowRight size={15} />
           </button>
-          <a
-            href="https://calendly.com/ismailtisetiwa/30min"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              fontSize: "clamp(0.8rem,1.8vw,0.9rem)",
-              color: "#aaa",
-              fontWeight: 500,
-              textDecoration: "none",
-              transition: "color 0.2s",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#ff1f3d")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#aaa")}
-          >
-            <FiCalendar size={14} /> Book a free call
-          </a>
         </motion.div>
 
         <motion.div
@@ -967,38 +964,38 @@ function Hero() {
         transition={{ delay: 1.55 }}
         style={{
           position: "absolute",
-          bottom: "clamp(5.8rem,8.8vw,7rem)",
-          right: "clamp(1.8rem,4vw,2.4rem)",
+          bottom: "clamp(4.95rem,7.2vw,6rem)",
+          right: "clamp(1.15rem,3.2vw,1.8rem)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "clamp(6px,1vw,8px)",
+          gap: "clamp(4px,0.8vw,6px)",
           pointerEvents: "none",
           zIndex: 2,
         }}
       >
         <span
           style={{
-            fontSize: "clamp(1.7rem,1.2vw,0.9rem)",
-            letterSpacing: "0.18em",
+            fontSize: "clamp(0.7rem,1vw,0.8rem)",
+            letterSpacing: "0.16em",
             textTransform: "uppercase",
             color: "#ff1f3d",
             fontWeight: 700,
-            textShadow: "0 0 12px rgba(255,31,61,0.35)",
+            textShadow: "0 0 10px rgba(255,31,61,0.3)",
           }}
         >
           video
         </span>
         <motion.div
-          animate={{ y: shouldReduce ? 0 : [0, 7, 0] }}
+          animate={{ y: shouldReduce ? 0 : [0, 5, 0] }}
           transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
           style={{
             color: "#ff1f3d",
             display: "flex",
-            filter: "drop-shadow(0 0 8px rgba(255,31,61,0.45))",
+            filter: "drop-shadow(0 0 6px rgba(255,31,61,0.35))",
           }}
         >
-          <FiChevronDown size={18} />
+          <FiChevronDown size={14} />
         </motion.div>
       </motion.div>
 
@@ -1013,13 +1010,13 @@ function Hero() {
         }
         style={{
           position: "absolute",
-          bottom: "clamp(4rem,6vw,5rem)",
-          right: "clamp(1.25rem,4vw,3rem)",
-          width: 46,
-          height: 46,
+          bottom: "clamp(3.6rem,5.3vw,4.4rem)",
+          right: "clamp(0.7rem,2.2vw,1.3rem)",
+          width: 56,
+          height: 56,
           borderRadius: "50%",
           border: "1px solid rgba(255,31,61,0.3)",
-          background: "rgba(5,5,5,0.6)",
+          background: "rgba(5,5,5,0.7)",
           backdropFilter: "blur(12px)",
           display: "flex",
           alignItems: "center",

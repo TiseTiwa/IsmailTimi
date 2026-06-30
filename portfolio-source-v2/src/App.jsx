@@ -262,7 +262,7 @@ const SOCIALS = [
   { href: "https://linkedin.com/in/ismail-timileyin", icon: FaLinkedin },
   { href: "https://www.instagram.com/tisetiwa_fit/", icon: FaInstagram },
   { href: "https://wa.me/2347073558984", icon: FaWhatsapp },
-  { href: "mailto:ismailkoya04@gmail.com", icon: FiMail },
+  { href: "mailto:ismailtisetiwa@gmail.com", icon: FiMail },
 ];
 
 /* ─── Helpers ───────────────────────────────────────────────────────── */

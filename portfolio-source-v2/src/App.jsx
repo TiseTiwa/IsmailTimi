@@ -884,7 +884,7 @@ function Hero() {
               alignItems: "center",
             }}
           >
-            <a href="/ismail-timi-cv.pdf" download className="btn-primary">
+            <a href="/IsmailTimiCV.docx" download className="btn-primary">
               <FiDownload size={15} /> Download CV
             </a>
             <a
